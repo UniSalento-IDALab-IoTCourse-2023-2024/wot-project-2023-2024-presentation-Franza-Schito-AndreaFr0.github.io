@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Progetto IoT - Health Care</title>
+  <title>Progetto IoT - Neuro-Care</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Progetto IoT - Health Care</h1>
+    <h1>Progetto IoT - Neuro-Care</h1>
   </header>
 
   <nav>
@@ -55,7 +55,10 @@ Nel contesto del sistema sviluppato, è stata adottata la tecnologia MQTT (Messa
 
   <section id="fitbit">
     <h2>Architettura del sistema</h2>
-    <p> IMMAGINE
+    <div class="image-container">
+    	<img src="Architettura.png" alt="Architettura" width="1000">
+    </div>
+    <p>
 Il backend, sviluppato con Java Spring Boot, gestisce la logica applicativa e l’interazione con il database MongoDB, dove vengono memorizzati i dati biometrici degli utenti. Il frontend, realizzato con React, consente l’interazione degli utenti (caregiver e dottori) tramite un’interfaccia web moderna e responsive. Le richieste tra frontend e backend vengono instradate tramite AWS API Gateway, che agisce da punto di accesso centralizzato e sicuro. I dati biometrici vengono acquisiti tramite l’applicazione Fitbit, che sincronizza i valori registrati dallo smartwatch e li rende disponibili via API. Inoltre, il protocollo MQTT viene utilizzato per supportare comunicazioni leggere ed efficienti tra dispositivi, facilitando l’invio rapido di dati in tempo reale.
     </p>
   </section>
